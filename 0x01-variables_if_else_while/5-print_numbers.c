@@ -5,13 +5,13 @@
  * Return: Always 0 (Success/correct)
  */
 
-int main(0)
+int main(void)
 {
-	int number;
+	int digit;
 
-	for (number = 0 ; number < 10 ; number++)
+	for (digit = 0 ; digit < 10 ; digit++)
 	{
-		printf("%d", number);
+		printf("%d", digit);
 	}
 
 	printf("\n");
