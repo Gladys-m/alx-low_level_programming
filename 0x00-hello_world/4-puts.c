@@ -2,9 +2,8 @@
 /**
  * main- Entry point
  * puts function
- * Return : return 0 after execution
+ * Return : return (0) after printing output
  */
-
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
