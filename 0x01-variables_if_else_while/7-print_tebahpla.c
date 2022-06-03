@@ -1,8 +1,7 @@
 #include <stdio.h>
 /**
  * main - Prints lowercase alphabets in reverse
- * 
- * Return : Always 0 (success)
+ * Return:(0) after next line
  */
 
 int main(void)
