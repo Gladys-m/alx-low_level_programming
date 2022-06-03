@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - Prints a quote in the standard error
- * Return: 1 after printing to standard error
+ * Return: 1 after success
  */
 int main(void)
 {
