@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - Prints the size of various data types
+ * main - Prints the size of various data types using function sizeof
  *
- * Return : return 0
+ * Return: 0 after printing the last size of float
  */
 int main(void)
 {
