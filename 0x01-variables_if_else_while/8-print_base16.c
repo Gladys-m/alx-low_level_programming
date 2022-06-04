@@ -10,8 +10,9 @@ int main(void)
 
 	while (num < 0x10)
 	{
-		printf("%x/n", num);
+		printf("%x", num);
 		num++;
 	}
+	printf("/n");
 	return (0);
 }
