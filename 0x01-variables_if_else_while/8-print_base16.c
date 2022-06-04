@@ -8,7 +8,7 @@ int main(void)
 {
 	int num = 0x00;
 
-	while(num <= 0x0F)
+	while( num < 0x10 )
 	{
 		printf("%x", num);
 		num++;
