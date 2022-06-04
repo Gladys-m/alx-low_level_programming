@@ -13,6 +13,5 @@ int main(void)
 		printf("%x", num);
 		num++;
 	}
-	printf("/n");
 	return (0);
 }
