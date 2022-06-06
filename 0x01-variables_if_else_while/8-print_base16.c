@@ -8,9 +8,9 @@ int main(void)
 {
 	int num;
 
-	while(num < 0x10)
+	while (num < 0x10)
 	{
-		printf("%x",num);
+		printf("%x", num);
 		num++;
 	}
 	return (0);
