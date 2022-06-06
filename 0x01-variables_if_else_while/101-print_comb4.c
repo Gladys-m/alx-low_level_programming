@@ -6,17 +6,21 @@
 
 int main(void)
 {
-	int i = 0;
-	int j = 0;
-	int k = 0;
+	int i;
+	int j;
+	int k;
 
-	for (i = 0; i < 10; i++)
+	for (i = 48; i < 56; i++)
 	{
-		for (j = 0; j < 10; j++)
+		for (j = (i+1); j < 57; j++)
 		{
-			for (k = 0; k < 10; k++)
+			for (k = (j+1); k < 58; k++)
 			{
-				printf("%d%d ,%d", i, j, k);
+				putchar(i);
+				putchar(j);
+				putchar(k);
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
