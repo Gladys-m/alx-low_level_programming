@@ -22,6 +22,8 @@ int main(void)
 			if (i != 56){
 				putchar(',');
 				putchar(' ');
+		}
+		}	
 	}
 	return (0);
 }
