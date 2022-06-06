@@ -6,15 +6,22 @@
 
 int main(void)
 {
-	int i = 0;
-	int j = 0;
+	int i;
+	int j;
 
-	for (i = 0; i < 10 ; i++)
+	for (i = 48; i < 57 ; i++)
 	{
-		for (j = 0; j < 10; j++)
+		for (j = (i+1); j < 58; j++)
 		{
-			printf("%d, %d", i, j);
+			putchar(i);
+			putchar(j);
+			if (j != 57){
+				putchar(',');
+				putchar(' ');
 		}
+			if (i != 56){
+				putchar(',');
+				putchar(' ');
 	}
 	return (0);
 }
