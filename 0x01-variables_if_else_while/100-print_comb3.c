@@ -18,8 +18,10 @@ int main(void)
 			if (j == 57 && i == 56)
 				putchar(' ');
 			else
+			{
 				putchar(',');
 				putchar(' ');
+			}
 		}
 	}
 	return (0);
