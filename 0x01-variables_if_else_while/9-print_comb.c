@@ -6,14 +6,17 @@
 
 int main(void)
 {
-	int i = 0;
+	int num;
 
-	for (i = 0 ; i < 10 ; i++)
+	for (num = 48; num < 58; num++)
 	{
-		if (i == 9)
-			printf("%d", i);
+		putchar(num);
+
+		if (num == 57)
+			putchar(EOF);
 		else
-			printf("%d, ", i);
+			putchar(',');
+		putchar(' ');
 	}
 	return (0);
 }
