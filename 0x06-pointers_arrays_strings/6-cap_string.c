@@ -1,62 +1,32 @@
-#include "main.h
-
-/**
- * separators - checks and ensure that all string is capitalized
- * @c: character to be checked
- * Return: if separator return 1. Otherwise return 0;
- */
-
-
-int separator(char c)
-{
-
-switch (c)
-{
-case ' ':
-case '\t':
-case '\n':
-case ',':
-case ';':
-case '.':
-case '!':
-case '?':
-case '"':
-case '(':
-case ')':
-case '{':
-case '}':
-return (1);
-
-default:
-return (0);
-}
-
-
-}
+#include "main.h"
+#include <ctype.h>
 /**
  * cap_string - capitalizes all words of a string
  * @s: string to uppercase
  * Return: returns the modified string
  */
+
 char *cap_string(char *s)
 {
-int count, upper;
+int i;
 
-upper = -32;
-
-count = 0;
-
-while (s[count] != '\0')
+for(i = 0; s[i] != '\0'; i++)
 {
-if (s[count] >= 'a' && s[count] <= 'z')
-{
-
-
-if (s[count] == *s || separator(s[count - 1]))
-
-s[count] += upper;
+	if (i == 0)
+	{
+		if(s[i] >= 'a' && s[i] <= 'z')
+		{
+			s[i] = s[i] - 32;
+		}
+	}
+	else if (!isalnum(s[i-1]))
+	{
+		if(s[i] >= 'a' && s[i] <= 'z')
+		{
+			s[i] = s[i] - 32;
+		}
+	}
 }
-count++;
-}
+
 return (s);
 }
