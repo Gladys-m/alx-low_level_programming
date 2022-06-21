@@ -1,1 +1,1 @@
-More on pointers arrays and strings
+0-memset - fills memory with a constant byte
