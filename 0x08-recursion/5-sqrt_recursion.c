@@ -23,7 +23,7 @@ int sqr_r(int n, int val)
 	if (val * val == n)
 		return (val);
 	else if (val * val < n)
-		return (square(n, val + 1));
+		return (sqr_r(n, val + 1));
 	else
 		return (-1);
 }				
