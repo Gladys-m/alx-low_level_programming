@@ -8,22 +8,22 @@
  */
 int _sqrt_recursion(int n)
 {
-	return (sqrt(n, 1));
+	return (sqroot(n, 1));
 }
 
 /**
- * sqrt - find square root
+ * sqroot - find square root
  * @n: number to find square root
  * @val: square root
  *
- * Return: sqrt recursion
+ * Return: sqroot recursion
  */
-int sqrt(int n, int val)
+int sqroot(int n, int val)
 {
 	if (val * val == n)
 		return (val);
 	else if (val * val < n)
-		return (sqrt(n, val + 1));
+		return (sqroot(n, val + 1));
 	else
 		return (-1);
 }				
