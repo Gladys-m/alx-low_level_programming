@@ -10,7 +10,6 @@ int _sqrt_recursion(int n)
 {
 	return (sqroot(n, 1));
 }
-
 /**
  * sqroot - find square root
  * @n: number to find square root
@@ -26,4 +25,4 @@ int sqroot(int n, int val)
 		return (sqroot(n, val + 1));
 	else
 		return (-1);
-}				
+}
