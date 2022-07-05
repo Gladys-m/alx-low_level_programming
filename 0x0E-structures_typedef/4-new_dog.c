@@ -15,7 +15,9 @@ char (char *src)
 	if (src == NULL)
 		return (NULL);
 	for (length = 0; src[length] != '\0'; length++)
-		ptr = malloc(sizeof(char) * (lenghth + 1));
+		;
+
+	ptr = malloc(sizeof(char) * (lenghth + 1));
 	if (ptr == NULL)
 	{
 		return (NULL);
