@@ -11,7 +11,8 @@
  * @len: length of string
  * @next: points to next node
  *
- * Description - creating linked list for alx project
+ * Description - singly linked list for alx
+ * project assignments
  */
 typedef struct list_s
 {
