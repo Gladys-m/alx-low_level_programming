@@ -16,7 +16,7 @@ listint_t *reverse_listint(listint_t **head)
 		nextnode = (*head)->next;
 		(*head)->next = prevnode;
 		prevnode = *head;
-		*head = *nextnode;
+		*head = nextnode;
 	}
 	*head = prevnode;
 
