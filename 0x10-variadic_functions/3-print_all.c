@@ -14,8 +14,13 @@ void print_all(const char * const format, ...)
 	int v, x;
 	double z;
 	char * y;
-	unsigned int len = strlen(format);
+	unsigned int len = 0;
 	const char t_arg[] = "cifs";
+	
+	while (format[len] != '\0')
+	{
+		len++;
+	}
 
 	va_start(args, format);
 	for (i = 0; i < len; i++)
