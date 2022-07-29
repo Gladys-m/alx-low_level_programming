@@ -14,7 +14,7 @@ void print_all(const char * const format, ...)
 	int v, x;
 	double z;
 	char * y;
-	int len = strlen(format);
+	unsigned int len = strlen(format);
 	const char t_arg[] = "cifs";
 
 	va_start(args, format);
@@ -31,7 +31,7 @@ void print_all(const char * const format, ...)
 			j++;
 		}
 
-		switch(format[i]);
+		switch (format[i])
 		{
 			case 'c':
 				v = va_arg(args, int);
