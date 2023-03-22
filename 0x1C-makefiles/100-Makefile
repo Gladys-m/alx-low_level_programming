@@ -6,9 +6,7 @@ NAME = school
 
 .PHONY: all clean fclean oclean re
 
-all: $(NAME)
-
-$(NAME): m.h $(OBJ)
+all: m.h $(NAME)
 	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 
 clean:
